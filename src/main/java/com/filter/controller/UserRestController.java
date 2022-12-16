@@ -43,8 +43,12 @@ public class UserRestController {
     return userService.create(element);
   }
 
+  //The challenge: search for an user by different parameters: simply get all, 
+  // by firstname, by lastname, by first&last, by age, by weight, by age&weight, 
+  //by ssn based on parameter you pass to the controller.
   @GetMapping(value = "/search", produces = "application/json")
   public List<User> searchUser() {
+	  //Your code here
 	  return null;
   }
 }
